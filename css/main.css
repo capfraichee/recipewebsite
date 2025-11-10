@@ -775,13 +775,95 @@ h6 {
 .hero-front-page-details {
 
     background-image: url("../img/soup.png");
-    display: flex;
-    flex-direction: column;
-    grid-column: 8 / span 5;
-    grid-row: 3;
+    min-height: 600px;
     background-repeat: no-repeat;
-    padding: 100px 0 100px 0;
+    background-position: top right;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeart(12, 1fr);
+    width: var(--width-12col);
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: start;
+    color: var(--background-color-light);
+}
 
+.hero-container-desciption {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.hero-container-desciption .hero-container-desciption-item {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.95rem;
+    color: var(--background-color-light);
+}
+
+
+.hero-container-desciption .hero-container-desciption-item svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    color: var(--primary-color);
+}
+
+.hero-list-ingredients-text h5 {
+    color: var(--background-color-light);
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.hero-list {
+    display: flex;
+    flex-direction: row;
+    width: var(--width-12col);
+}
+
+.hero-list-one {
+    margin-right: 40px;
+}
+
+.hero-list-one,
+.hero-list-two {
+    width: 269px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.hero-bottom-area {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.hero-bottom-area-item a{
+    background-color: var(--background-color-dark);
+    color: var(--background-color-light);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 16px;
+}
+
+.hero-bottom-area-item a svg{
+    display: block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    color: inherit;
 }
 
 /* Recipe details end */
@@ -843,7 +925,7 @@ h6 {
     justify-content: flex-end;
 }
 
-.hero-container-title-text-cap p{
+.hero-container-title-text-cap p {
     /* background-color: #2600ff70; */
     margin-top: 20px;
     height: 100px;
@@ -855,7 +937,7 @@ h6 {
     font-size: 14px;
 }
 
-.hero-container-title-text-cap p span{
+.hero-container-title-text-cap p span {
     /* background-color: #2600ff70; */
     color: var(--primary-color);
     display: inline;
@@ -892,6 +974,7 @@ h6 {
     background-image: url("../img/chef-cooking.jpg");
     background-size: cover;
 }
+
 /* .box-one-cap img {
     object-fit: contain;
     width: 100%;
@@ -913,6 +996,7 @@ h6 {
 .box-six-cap p {
     color: var(--color_light);
 }
+
 /* Content area end */
 
 /* Footer start */
