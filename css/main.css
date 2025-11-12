@@ -772,18 +772,26 @@ h6 {
     color: var(--primary-color);
 }
 
-.hero-front-page-details {
+.hero-container-recipe-details {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+    color: var(--background-color-light);
+}
 
+.hero-front-page-details {
     background-image: url("../img/soup.png");
     min-height: 600px;
     background-repeat: no-repeat;
     background-position: top right;
     display: grid;
     height: auto;
-    grid-template-columns: repeart(12, 1fr);
+/*     grid-template-columns: repeart(12, 1fr); */
     width: var(--width-12col);
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
     align-items: start;
     color: var(--background-color-light);
 }
@@ -838,7 +846,7 @@ h6 {
 }
 
 .hero-bottom-area {
-    margin-top: 40px;
+    margin: 40px 0 60px 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -864,6 +872,31 @@ h6 {
     height: 18px;
     flex: 0 0 18px;
     color: inherit;
+}
+
+.instructions-list {
+    background-image: url("../img/soup.png");
+    color: var(--background-color-light);
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    background-position: top right;
+    background-size: auto 50%;
+    background-repeat: repeat-y;
+    width: var(--width-12col);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.instructions-list ol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.instructions-list svg {
+    display: flex;
+    gap: 20px;
 }
 
 /* Recipe details end */
@@ -975,11 +1008,6 @@ h6 {
     background-size: cover;
 }
 
-/* .box-one-cap img {
-    object-fit: contain;
-    width: 100%;
-    height: 75%;
-} */
 
 .box-four-cap {
     background-image: url("../img/family-bbq.jpg");
@@ -999,17 +1027,5 @@ h6 {
 
 /* Content area end */
 
-/* Footer start */
-/* 
-.footer-cap {
-    width: 100%;
-    height: 150px;
-    background-color: var(--primary-color);
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-}
- */
-/* Footer end */
 
 /* Own page end */
