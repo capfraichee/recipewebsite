@@ -39,7 +39,6 @@
 }
 
 
-
 body,
 html {
     width: var(--width-full);
@@ -115,6 +114,8 @@ html {
 .menu-container ul li:last-child {
     border: none;
 }
+
+
 
 .hero-front-page {
     background-image: url("../img/frontpage.png");
@@ -254,7 +255,7 @@ html {
 .todays_recipes_content_block_image,
 .todays_recipes_content_block_image_three,
 .todays_recipes_content_block_image_four {
-height: 204px;
+    height: 204px;
 }
 
 
@@ -805,7 +806,7 @@ h6 {
     background-position: top right;
     display: grid;
     height: auto;
-/*     grid-template-columns: repeart(12, 1fr); */
+    /*     grid-template-columns: repeart(12, 1fr); */
     width: var(--width-12col);
     margin: 0 auto;
     margin-top: 200px;
@@ -870,7 +871,7 @@ h6 {
 
 }
 
-.hero-bottom-area-item a{
+.hero-bottom-area-item a {
     background-color: var(--background-color-dark);
     color: var(--background-color-light);
     text-decoration: none;
@@ -883,7 +884,7 @@ h6 {
     font-size: 16px;
 }
 
-.hero-bottom-area-item a svg{
+.hero-bottom-area-item a svg {
     display: block;
     width: 18px;
     height: 18px;
@@ -1056,3 +1057,395 @@ h6 {
 
 
 /* Own page end */
+
+
+
+/* Mobile mockup */
+
+/* Index */
+
+@media (max-width:600px) {
+:root {
+    --width-12col:600px;
+    --padding-default:10px;
+    --grid-gap:8px;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+/* NAVIGATION */
+    .navigation {
+        height: auto;
+        padding: 10px;
+        position: fixed;
+    
+    }
+
+    .menu-container ul {
+        gap: 10px;
+        text-align: center;
+      
+    }
+
+    .menu-container ul li {
+        border: none;
+    }
+     /* HERO SECTION */
+    .hero-front-page {
+        margin-top: 100px;
+        background-image: none;
+        min-height: 350px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-text {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        width: 60%;
+        
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+      .search-box {
+        grid-column: 1;
+        grid-row: 2;
+        width: 60%;
+    }
+
+    /* TODAY'S RECIPES */
+    .todays_recipes {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .todays_recipes_content {
+        grid-template-columns: 1fr;
+    }
+
+     .todays_recipes_headline {
+        font-size: 28px;
+    }
+    .todays_recipes_content_block {
+        width: 60%;
+    }
+
+    .todays_recipes_content_block_image img {
+        height: 160px;
+    }
+
+    /* CATEGORY BAR */
+    .categories {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+        width: 60%;
+
+    }
+.category-veg,
+    .category-seafood,
+    .category-chicken,
+    .category-meats,
+    .category-snacks,
+    .category-pastas,
+    .category-dessert {
+        width: 30%;
+        font-size: 12px;
+    }
+  /* IMAGE SECTION */
+    .image-section {
+        clip-path: none;
+        height: auto;
+        padding: 40px 20px;
+        width: 60%;
+    }
+
+    .image-section-content {
+        justify-content: center;
+    }
+ .picture-textbox {
+        width: 60%;
+        height: auto;
+    }
+
+    /* FRAME CONTENT BOXES */
+    .frame-content {
+        flex-direction: column;
+    }
+
+    .frame-content-box-item {
+        width: 60%;
+        height: auto;
+    }
+
+    .box-two, .box-three, .box-six {
+        background-image: url(none);
+        height: 0px;
+
+    }
+
+    
+    .box-one, .box-four, .box-five {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-image: url(none);
+    }
+
+    
+    /* footer */
+    .footer-box-first {
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    
+    }
+
+    .footer-box-third {
+        border-left: none;
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+}
+
+/* Recipe details */
+
+@media (max-width: 600px) {
+
+    .hero-container-recipe-details {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-front-page-details {
+        background-image: none;
+        min-height: auto;
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .hero-container-desciption {
+        width: 100%;
+        justify-content: center;
+        gap: .75rem;
+    }
+
+    .hero-container-desciption .hero-container-desciption-item {
+        font-size: 0.85rem;
+    }
+
+    .hero-container-desciption .hero-container-desciption-item svg {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+    }
+
+    .hero-list {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .hero-list-one,
+    .hero-list-two {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+        margin-right: 0;
+    }
+
+    .hero-list-ingredients-text h5 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-bottom-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 30px 0;
+    }
+
+    .hero-bottom-area-item a {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero-bottom-area-item a svg {
+        width: 16px;
+        height: 16px;
+        flex: 0 0 16px;
+    }
+
+    .instructions-list {
+        background-image: none;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .instructions-list ol {
+        gap: 20px;
+    }
+
+}
+
+/* Search page */
+
+@media (max-width: 600px) {
+
+    .hero-searchpage {
+        padding-top: 100px;
+    }
+
+    .search-box-searchpage {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 20px 0 0 0;
+        width: 80%;
+    }
+
+    .filter-catagory-checkbox {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 20px 0 0 0;
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+
+    /* SERP (results) */
+    .serp {
+        width: 100%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .serp-result-item {
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--color-dark);
+    }
+
+    .category-text {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .category {
+        padding-top: 20px;
+    }
+
+    .category h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .category h4 {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .serp-result-item h3 {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .serp-result-item p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+
+/* Own page */
+
+@media (max-width: 600px) {
+
+    .hero-front-page-cap {
+        min-height: 500px;
+        background-size: contain;
+    }
+
+    .hero-container-cap {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .hero-text-cap p {
+        width: 90%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero-container-title-cap {
+        margin-top: 100px;
+        min-width: 100%;
+        min-height: 200px;
+        background-size: contain;
+    }
+
+    .hero-container-title-text-cap p {
+        width: 90%;
+        height: auto;
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .frame-content-box-item-cap {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-one-cap,
+    .box-four-cap,
+    .box-five-cap {
+        background-image: none;
+        border: none;
+        height: 1px;
+    }
+
+    .box-one-cap,
+    .box-two-cap,
+    .box-three-cap,
+    .box-four-cap,
+    .box-five-cap,
+    .box-six-cap {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .box-two-cap,
+    .box-three-cap,
+    .box-six-cap {
+        padding-top: 50px;
+    }
+
+}
