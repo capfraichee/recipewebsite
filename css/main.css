@@ -229,17 +229,34 @@ html {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-
 }
 
 .todays_recipes_content_block_image img {
     border-radius: 5px 5px 0 0;
-    height: 200px;
+    height: 204px;
     width: 100%;
     background-size: cover;
     background-position: center;
-
 }
+
+.todays_recipes_content_block_image_one {
+    background-color: var(--color-dark);
+}
+
+.todays_recipes_content_block_image_three,
+.todays_recipes_content_block_image_one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todays_recipes_content_block_image_one,
+.todays_recipes_content_block_image,
+.todays_recipes_content_block_image_three,
+.todays_recipes_content_block_image_four {
+height: 204px;
+}
+
 
 .todays_recipes_content_block_text {
     padding: 20px;
@@ -417,7 +434,7 @@ span[data-category="beef/pork"] {
 
 
 .image-section {
-    background-image: url('https://picsum.photos/1200/800');
+    background-image: url('../img/cake.png');
     height: 800px;
     background-size: cover;
     padding-top: 350px;
@@ -485,21 +502,21 @@ p {
 }
 
 .box-two {
-    background-image: url('https://picsum.photos/1200/800');
+    background-image: url('../img/chicktastic.png');
     width: 600px;
     height: 380px;
     background-size: cover;
 }
 
 .box-three {
-    background-image: url('https://picsum.photos/1200/800');
+    background-image: url('../img/table-food.png');
     width: 600px;
     height: 380px;
     background-size: cover;
 }
 
 .box-six {
-    background-image: url('https://picsum.photos/1200/800');
+    background-image: url('../img/close-up-person-cooking.png');
     width: 600px;
     height: 380px;
     background-size: cover;
@@ -983,7 +1000,7 @@ h6 {
 
 .frame-content-box-item-cap {
     width: 50%;
-    height: 380px;
+    height: 600px;
 }
 
 .box-one-cap,
@@ -993,7 +1010,7 @@ h6 {
 .box-five-cap,
 .box-six-cap {
     width: 600px;
-    height: 380px;
+    height: 600px;
     padding: 80px;
 }
 
@@ -1003,9 +1020,18 @@ h6 {
     border: 1px solid black;
 }
 
+.box-two-cap,
+.box-three-cap,
+.box-six-cap {
+    padding-top: 200px;
+}
+
 .box-one-cap {
     background-image: url("../img/chef-cooking.jpg");
-    background-size: cover;
+    display: flex;
+    background-position: bottom;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
 }
 
 
@@ -1017,6 +1043,7 @@ h6 {
 .box-five-cap {
     background-image: url("../img/vegan.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .box-two-cap p,
