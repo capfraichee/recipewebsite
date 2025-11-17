@@ -978,13 +978,13 @@ h6 {
     padding-top: 250px;
 }
 
-.hero-title-cap h2 {
-    font-size: 110px;
+.hero-title-cap {
+    font-size: 140px;
     font-family: "Kaushan Script", cursive;
     font-style: italic;
     line-height: 50px;
     width: 1000px;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
     /* -webkit-text-stroke: 1px var(--background-color-dark); */
 }
 
@@ -1424,34 +1424,26 @@ h6 {
         padding-left: 20px;
     }
 
-    .hero-title-cap h2 {
-    /*     font-size: 75px; */
-    /*     font-family: "Kaushan Script", cursive; */
-    /*     font-style: italic; */
-    /*     line-height: 50px; */
-    /*     padding-bottom: 40px; */
-    /*     width: 300px; */
-    /*     -webkit-text-stroke: 1px var(--background-color-dark); */
-     font-size: 75px;
-    font-family: "Kaushan Script", cursive;
-    font-style: italic;
-    line-height: 50px;
-    padding-bottom: 40px;
-    width: 300px;
-    text-shadow:
-      -2px -2px 0 var(--background-color-dark),
-       2px -2px 0 var(--background-color-dark),
-      -2px  2px 0 var(--background-color-dark),
-       2px  2px 0 var(--background-color-dark),
-       0px -2px 0 var(--background-color-dark),
-       0px  2px 0 var(--background-color-dark),
-      -3px  0px 0 var(--background-color-dark),
-       3px  0px 0 var(--background-color-dark);
+    .hero-title-cap {
+        /*     font-size: 75px; */
+        /*     font-family: "Kaushan Script", cursive; */
+        /*     font-style: italic; */
+        /*     line-height: 50px; */
+        /*     padding-bottom: 40px; */
+        /*     width: 300px; */
+        /*     -webkit-text-stroke: 1px var(--background-color-dark); */
+        font-size: 75px;
+        font-family: "Kaushan Script", cursive;
+        font-style: italic;
+        line-height: 50px;
+        padding-bottom: 20px;
+        width: 300px;
     }
 
     .hero-title-cap span {
         font-size: 50px;
     }
+
 
     .hero-container-title-cap {
         padding-top: 100px;
@@ -1461,8 +1453,8 @@ h6 {
         background-size: contain;
     }
 
-    .hero-text-cap p{
-        font-size: 11px;
+    .hero-text-cap p {
+        font-size: 10px;
         width: 300px;
     }
 
